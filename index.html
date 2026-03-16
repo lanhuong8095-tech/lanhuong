@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專業履歷 - Profile</title>
+    <style>
+        /* 全域設定 */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f3f2ef; /* LinkedIn 招牌灰底 */
+            color: #191919;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* 卡片式設計 */
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 4px 4px rgba(0,0,0,0.02);
+            margin-bottom: 12px;
+            overflow: hidden;
+            padding: 24px;
+        }
+
+        /* 頂部 Header 樣式 */
+        .profile-header {
+            position: relative;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .banner {
+            height: 120px;
+            background: linear-gradient(to right, #a0b4b7, #0a66c2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+            background-color: #eee;
+        }
+
+        .name {
+            font-size: 28px;
+            margin: 15px 0 5px 0;
+            font-weight: 600;
+        }
+
+        .headline {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* 內容標題 */
+        h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: #0a66c2;
+        }
+
+        /* 經歷與教育清單 */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .item .sub-text {
+            color: #666;
+            font-size: 14px;
+            margin: 2px 0;
+        }
+
+        /* 技能標籤 */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #e7f3ff;
+            color: #0a66c2;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* 聯絡按鈕 */
+        .contact-btn {
+            display: inline-block;
+            background-color: #0a66c2;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #004182;
+        }
+
+        @media (max-width: 600px) {
+            .profile-img { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card profile-header">
+        <div class="banner"></div>
+        <img src="https://via.placeholder.com/150" alt="您的照片" class="profile-img">
+        <h1 class="name">您的姓名</h1>
+        <p class="headline">專業職稱 | 核心領域 | 現任公司或組織</p>
+        <p style="color: #666;">台灣 ‧ 台北市</p>
+        <a href="mailto:yourname@example.com" class="contact-btn">與我聯絡</a>
+    </div>
+
+    <div class="card">
+        <h2>關於</h2>
+        <p>
+            在這裡用三到五句話簡述您的專業背景。例如：擁有多年的數位內容創作經驗，擅長利用 AI 工具優化工作流程，並對視覺傳達與品牌設計有著高度熱忱。致力於在技術與美感之間尋求完美的平衡點。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>工作經歷</h2>
+        <div class="item">
+            <h3>資深專案經理</h3>
+            <p class="sub-text">某某科技有限公司 · 全職</p>
+            <p class="sub-text">2022年1月 - 至今</p>
+            <p>負責領導跨部門團隊完成多項數位轉型專案，提升整體工作效率 20%。</p>
+        </div>
+        <div class="item">
+            <h3>行銷企劃</h3>
+            <p class="sub-text">創新行銷工作室</p>
+            <p class="sub-text">2020年6月 - 2021年12月</p>
+            <p>主導社群媒體經營與內容策略，成功增長粉絲數達 50,000 人。</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>教育背景</h2>
+        <div class="item">
+            <h3>某某大學 - 資訊傳播學系</h3>
+            <p class="sub-text">學士學位</p>
+            <p class="sub-text">2016年 - 2020年</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>專業技能</h2>
+        <div class="skills-container">
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">AI 影像生成</span>
+            <span class="skill-tag">專案管理</span>
+            <span class="skill-tag">數位行銷策略</span>
+            <span class="skill-tag">UI/UX 設計</span>
+            <span class="skill-tag">團隊協作</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
