@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人專業履歷 - Profile</title>
+    <title>個人專業履歷 - LAN HUONG Profile</title>
     <style>
-        /* 全域設定 */
+        /* --- Toàn bộ thiết lập (Global Settings) --- */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
-            background-color: #f3f2ef; /* LinkedIn 招牌灰底 */
+            background-color: #f3f2ef; /* Màu nền xám nhạt kiểu LinkedIn */
             color: #191919;
             margin: 0;
             padding: 0;
@@ -21,7 +21,7 @@
             padding: 0 15px;
         }
 
-        /* 卡片式設計 */
+        /* --- Thiết kế dạng Thẻ (Card Design) --- */
         .card {
             background: #fff;
             border-radius: 10px;
@@ -31,127 +31,20 @@
             padding: 24px;
         }
 
-        /* 頂部 Header 樣式 */
+        /* --- Phần Header Hồ sơ (Profile Header) --- */
         .profile-header {
             position: relative;
             text-align: center;
-            padding-top: 60px;
+            /* Tạo khoảng trống phía trên để đẩy nội dung chữ xuống dưới ảnh đại diện */
+            padding-top: 100px; 
+            padding-bottom: 24px;
         }
 
+        /* Ảnh bìa (Banner) */
         .banner {
             height: 120px;
             background: linear-gradient(to right, #a0b4b7, #0a66c2);
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-        }
-
-        /* 您的照片 (Sửa thành hình tròn) */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Thêm thuộc tính này để tạo hình tròn */
-            border: 4px solid white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        .name {
-            font-size: 28px;
-            margin: 15px 0 5px 0;
-            font-weight: 600;
-        }
-
-        .headline {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        /* 內容標題 */
-        h2 {
-            font-size: 20px;
-            border-bottom: 1px solid #ebebeb;
-            padding-bottom: 10px;
-            margin-top: 0;
-            color: #0a66c2;
-        }
-
-        /* 經歷與教育清單 */
-        .item {
-            margin-bottom: 20px;
-        }
-
-        .item h3 {
-            margin: 0;
-            font-size: 17px;
-        }
-
-        .item .sub-text {
-            color: #666;
-            font-size: 14px;
-            margin: 2px 0;
-        }
-
-        /* 技能標籤 */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill-tag {
-            background-color: #e7f3ff;
-            color: #0a66c2;
-            padding: 6px 12px;
-            border-radius: 16px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        /* 聯絡按鈕 */
-        .contact-btn {
-            display: inline-block;
-            background-color: #0a66c2;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 24px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-            transition: background 0.3s;
-        }
-
-        .contact-btn:hover {
-            background-color: #004182;
-        }
-
-        @media (max-width: 600px) {
-            .profile-img { width: 120px; height: 120px; }
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="card profile-header">
-        <div class="banner"></div>
-        <img src="images/1.jpg" alt="您的照片" class="profile-img">
-        <h1 class="name">LAN HUONG</h1>
-        <p class="headline">專業職稱 | 核心領域 | 現任公司或組織</p>
-        <p style="color: #666;">台灣 ‧ 台北市</p>
-        <a href="mailto:yourname@example.com" class="contact-btn">與我聯絡</a>
-    </div>
-
-    <div class="card">
-        <h2>關於</h2>
-        <p>
-            在這裡用三到五句話簡述您的專業背景。例如：擁有多年的數位內容創作經驗，擅長利用 AI 工具優化工作流程，並對視覺傳達與品牌設計有著高度熱忱。致力於在技術與美感之間尋求完美的平衡點。
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>工作經歷</h2>
-        <div class="item">
-            <h3>資深專案經理</h3>
-            <p class="sub-text">某某科技有限公司 · 全職</p>
+            right:
